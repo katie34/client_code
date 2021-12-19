@@ -14,3 +14,12 @@ export const EDIT_STUDENT = "EDIT_STUDENT";
 
 //Single student
 export const FETCH_STUDENT = "FETCH_STUDENT";
+
+//Add campus
+export const ADD_CAMPUS = "ADD_CAMPUS";
+
+//delete campus
+export const DELETE_CAMPUS = "DELETE_CAMPUS";
+
+//edit campus
+export const EDIT_CAMPUS = "EDIT_CAMPUS";
