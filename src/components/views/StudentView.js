@@ -6,7 +6,6 @@ const StudentView = (props) => {
         <h3>{student.campus.name}</h3>
       </div>
     );
-  
   };
   
   export default StudentView;
