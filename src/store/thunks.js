@@ -78,6 +78,7 @@ export const fetchStudentThunk = id => async dispatch => {
     console.error(err);
   }
 };
+
 //Add campus
 export const addCampusThunk = (campus) => async (dispatch) => {
   try {
