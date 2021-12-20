@@ -40,6 +40,7 @@ export const fetchAllStudentsThunk = () => async (dispatch) => {
   }
 };
 
+//add student
 export const addStudentThunk = (student) => async (dispatch) => {
   try {
     let res = await axios.post(`/api/students`, student);
