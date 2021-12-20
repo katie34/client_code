@@ -14,7 +14,7 @@ class NewStudentContainer extends Component {
           lastname: "", 
           campusId: null, 
           redirect: false, 
-          redirectId: null
+          redirectId: ""
         };
     }
 
@@ -40,7 +40,8 @@ class NewStudentContainer extends Component {
           lastname: "", 
           campusId: null, 
           redirect: true, 
-          redirectId: newStudent.id
+          //redirectId: newStudent.id
+          redirectId: ""
         });
     }
 

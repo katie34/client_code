@@ -12,8 +12,9 @@ class NewCampusContainer extends Component {
         this.state = {
           name: "", 
           description: "", 
+          campusId: null,
           redirect: false, 
-          redirectId: null
+          redirectId: ""
         };
     }
 
@@ -28,7 +29,8 @@ class NewCampusContainer extends Component {
 
         let campus = {
             name: this.state.name,
-            description: this.state.description
+            description: this.state.description,
+            campusId: this.state.campusId
         };
 
         let newCampus = await this.props.addCampus(campus);
@@ -36,6 +38,7 @@ class NewCampusContainer extends Component {
         this.setState({
           name: "", 
           description: "",  
+          campusId: null,
           redirect: true, 
           redirectId: newCampus.id
         });

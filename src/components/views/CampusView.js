@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
     textDecoration: 'none',
   }
 
-}));
+})); 
 
 const CampusView = (props) => {
   const classes = useStyles();
