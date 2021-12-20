@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+//import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa"
 import AppBar from '@material-ui/core/AppBar';
@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const AllCampusesView = (props) => {
-  const {campuses,deleteCampus,editCampus} = props;
+  const {campuses,deleteCampus} = props;
   const classes = useStyles();
   if (!campuses.length) {
     return(
@@ -86,7 +86,7 @@ const AllCampusesView = (props) => {
           <Link to={`/campus/${campus.id}`}>
             <h1>{campus.name}</h1>
           </Link>
-          <img src={campus.imgurl} height = '150' width = '250'/>
+          <img src={campus.imgurl} alt="" height = '150' width = '250'/>
           <h2>{campus.address}</h2>
           <p>{campus.description}</p>
           <FaTimes style={{color:'red',cursor:'pointer'}} onClick={() => deleteCampus(campus.id)}>Delete</FaTimes>

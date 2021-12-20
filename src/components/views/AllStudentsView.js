@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
+//import PropTypes from "prop-types";
 import {FaTimes} from "react-icons/fa"
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -87,7 +87,7 @@ const AllStudentsView = (props) => {
           <Link to={`/student/${student.id}`}>
             <h1>Name: {name}</h1>
           </Link>
-          <img src={student.imgurl} height = '150' width = '250'/>
+          <img src={student.imgurl} alt="" height = '150' width = '250'/>
           <h2>Email:{name}@{student.campus.name}.com</h2>
           <h3>GPA:{student.gpa}</h3>
           <FaTimes style={{color:'red',cursor:'pointer'}} onClick={() => deleteStudent(student.id)}>Delete</FaTimes>

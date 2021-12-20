@@ -12,8 +12,7 @@ import { withRouter } from "react-router-dom";
 
 import { 
   fetchAllStudentsThunk,
-  deleteStudentThunk,
-  addStudentThunk
+  deleteStudentThunk
 } from '../../store/thunks';
 
 import AllStudentsView from '../views/AllStudentsView';
